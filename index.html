@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nav bar -->
+  <nav class="navbar">
+
+    <div class="nav-container">
+
+      <div id="logo"><a href="index.html">myLibros</a></div>
+
+        <ul class="nav-right">
+          <li id="add-book"><button id="addbook">Add Book</button></li>
+        </ul>
+
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Hero -->
+  <div class="hero">
+
+    <div class="hero-container">
+        <span id="feature-title">WELCOME TO YOUR LIBRARY</span>
+        <p id="feature-sypnosis">Add books by ISBN number or using a title and author. Categorize your books by read status and delete them as needed!
+        </p>
+
+    </div>
+
+  </div>
+
+
+    <div class="form-container">
+
+      <form>
+  
+        <div class="label-title">
+          <label for="name" class="form-label">ISBN</label>
+          <input type="text" id="isbn" class="input" name="user_name">
+        </div>
+
+        <span id="or">or</span>
+      
+        <div class="label-title">
+        <label for="title" class="form-label">Title</label>
+          <input type="text" id="title" class="input" name="title">
+        </div>
+
+        <div class="label-title">
+          <label for="author" class="form-label">Author</label>
+          <input type="text" id="author" class="input" name="author">
+        </div>
+
+        <div class="form-label">
+          Read Status
+        </div>
+        <select id="read-status" name="read-status">
+          <option value="Want to Read">Want To Read</option>
+          <option value="Reading">Reading</option>
+          <option value="Read">Read</option>
+        </select>
+      
+       
+        <div class="buttons">
+          <button type="submit" id="submit">Add</button>
+          <button type="button" id="hide">Hide</button>
+        </div>
+      </form>
+
+      </div>
+
+
+
+
+
+    <div class="changethis">
+
+      <span>Library</span>
+      <span id="book-count">0 books</span>
+
+    </div> 
+
+    <div class="view-menu">
+      <ul class="nav-index">
+        <li id="nav-reads" class=""><a href="#">By Read State</a></li>
+        <li id="nav-date" class=""><a href="#">By Date Added</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
