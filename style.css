@@ -5,12 +5,17 @@ a {
   cursor:pointer;  
   text-decoration: none;
 }
+
+html {
+  height: 100%;
+}
+
 body {
   padding: 0; /*remove padding and margin so background fills entire screen*/
   margin: 0;
   background-color: #ffff;
   font-family: 'Roboto';
-
+  height: 100%;
 }
 button {
   cursor: pointer;
@@ -25,6 +30,13 @@ p {
 }
 
 .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container2 {
   width: 85%;
   margin: 0 auto;
 }
@@ -107,15 +119,18 @@ img {
   text-align: center;
 }
 
+.book-shelf-container {
+  display: flex;
+}
 #book-shelf {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   background-color: #f3f3f3;
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto; */
   margin: 0 auto;
   padding: 1rem;
+  flex: 1;
+  height: 100%;
 }
 
 #book-count {
@@ -312,90 +327,6 @@ figure img {
   font-family: 'Roboto';
 }
 
-/* Media Queries */
-
-/* // Extra small devices (portrait phones, less than 576px) */
-/* @media (max-width: 575.98px) { 
-.container {
-  width: 85%;
-}
-
-#feature-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: .5rem;
-}
-
-#feature-sypnosis {
-  color: #4c4c4c;
-  font-size: 1rem;
-}
-
-#book-shelf {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
-figure {
-  margin: 1rem;
-  text-align: center;
-}
-
-figcaption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-figure img {
-  margin-bottom: 1rem;
-} */
-
-
-
-
-/* }
-
-/* // Small devices (landscape phones, less than 768px) */
-/* @media (max-width: 768px) { 
-.form-container {
-  width: 60%;
-}
-#feature-sypnosis {
-  width: 75%;
-}
-
-} */
-
-/* // Medium devices (tablets, less than 992px) */
-/* @media (max-width: 991.98px) { 
-  .form-container {
-    width: 60%;
-  }
-  #feature-sypnosis {
-    width: 75%;
-  }  
-
-} */
-
-/* // Large devices (desktops, less than 1200px) */
-/* @media (max-width: 1199.98px) {
-  .form-container {
-    width: 60%;
-  }
-  #feature-sypnosis {
-    width: 75%;
-  }
-  
-
-} */ 
-
-
-
-
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap */
-
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .view-menu {
@@ -431,7 +362,6 @@ figure img {
   }
 
 }
-
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #feature-sypnosis {
@@ -456,5 +386,4 @@ figure img {
   #feature-sypnosis {
     width: 60%;
   }
-
 }
