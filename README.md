@@ -9,7 +9,7 @@ to find and add books to your library.
 
 ## Preview
 
-<img alt="etch-a-sketch preview image" src="assets/preview" width="500px">
+<img alt="myLibros preview image" src="assets/preview.png" width="500px">
 
 ## Features
 * Add books
